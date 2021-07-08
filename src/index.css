@@ -1,13 +1,73 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+button{
+  padding: 20px 60px;
+  margin:auto;
+  background: blue;
+  font-size: 1.3rem;
+  color: aqua;
+}
+button:hover{
+  box-shadow: 2px 5px 17px aqua;
+  transition: 0.3s linear;
+}
+textarea{
+  margin: auto;
+  width:900px;
+  height: 200px;
+  background: black;
+  border: 4px solid salmon;
+  box-shadow:2px 5px 8px red;
+  color: aqua;
+  font-size: 1.3rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+
+
+
+@media ( max-width:500px){
+  .App{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 100vh;
+  }
+  textarea{
+    margin: auto;
+    width:50%;
+    height:80%;
+    background: black;
+    border: 4px solid rgb(178, 228, 13);
+    box-shadow:2px 5px 18px rgb(151, 233, 20);
+    color: aqua;
+    font-size: 1.3rem;
+  }textarea:hover{
+    border: 4px solid rgb(247, 251, 11);
+  }
+  #h3{
+    color: yellow;
+    font-size: 1.7rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;            
+  }
+  #h3-two{
+    font-size: 2.2rem;
+    color:rgb(255, 14, 14);
+  }
+  button{
+    padding: 20px 60px;
+    margin:auto;
+    background: rgb(9, 255, 0);
+    font-size: 1.3rem;
+    color: rgb(5, 5, 5);
+    border-radius: 23%;
+  }
 }
